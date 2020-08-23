@@ -86,7 +86,7 @@ $('.sertificates__slider').slick({
     ]
 });
 
-$('.popup-btn').magnificPopup({
+$('.popupBtn').magnificPopup({
      items: {
         type: 'inline',
         src: $('<form class="white-popup popup-form" action="#">\
