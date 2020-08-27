@@ -1,4 +1,4 @@
-
+/*GLOBAL*/
 html{
     box-sizing: border-box;
 }
@@ -30,6 +30,7 @@ button:active, button:focus {
 button::-moz-focus-inner {
   border: 0;
 }
+
 .header-img--mob{
 	display: none;
 }
@@ -117,6 +118,9 @@ button::-moz-focus-inner {
 	line-height: 48px;
     padding: 5px 29px 10px 20px;
 }
+
+/*HEADER*/
+
 .header{
     min-height: 860px;
     width: 100%;
@@ -269,6 +273,9 @@ button::-moz-focus-inner {
 .btn-verification{
 	position: absolute;
 }
+
+/*ADVANTAGES*/
+
 .advantages{
 	margin-top: 67px;
 	position: relative;
@@ -333,6 +340,9 @@ background: radial-gradient(ellipse at center, #E7F1F8 0%, #FFFFFF 0%, #E7F1F8 1
 -moz-box-shadow: 0px 0px 73px 52px rgba(231,241,248,1);
 box-shadow: 0px 0px 73px 52px rgba(231,241,248,1);
 }
+
+/*GLASSES*/
+
 .glasses{
 	margin-top: 154px;
 	position: relative;
@@ -430,6 +440,9 @@ background: radial-gradient(ellipse at center, #E9F1F9 0%, #EFF6FB 0%, #e9f1f9 1
 -moz-box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 }
+
+/*ACCESSORIES*/
+
 .axessories{
 	margin-top: 30px;
 	text-align: center;
@@ -482,6 +495,9 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
 .axessories-btn{
 	margin-top: 75px;
 }
+
+/*DIAGNOSTIC*/
+
 .diagnostik{
 	margin-top: 90px;
 	height: 700px;
@@ -627,6 +643,9 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
     z-index: 10;
     text-shadow: 0px 28px 40px rgba(179,206,226,1);
 }
+
+/*GLASSES-SLIDERS*/
+
 .glasses-sliders{
 	margin-top: 90px;
 	text-align: center;
@@ -686,6 +705,9 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
 	height: 60px;
 	margin-top: 46px;
 }
+
+/*REVIEW*/
+
 .review{
 	margin-top: 190px;
 	position: relative;
@@ -796,6 +818,9 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
 		left: 708px;
     	bottom: -26px;
     }
+
+/*TEAM*/
+
     .team{
     	margin-top: 100px;
     	margin-bottom: 100px;
@@ -853,6 +878,9 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
    	top: -253px;
     left: -221px;
    }
+
+/*SERTIFICATES*/
+
    .sertificates{
    	position: relative;
    }
@@ -894,6 +922,9 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
 .sertificates-dots{
 	margin-top: 80px;
 }
+
+/*CONTACTS*/
+
 .contacts{
 	margin-top: 155px;
 	position: relative;
@@ -976,6 +1007,9 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
 	left: 366px;
     top: 145px;
 }
+
+/*FOOTER*/
+
 .footer{
 	margin-bottom: 70px;
 	margin-top: 80px;
@@ -1034,6 +1068,9 @@ background: radial-gradient(ellipse at center, #E9F1F9 0%, #EFF6FB 0%, #e9f1f9 1
 -moz-box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 }
+
+/*MEDIA*/
+
 @media (max-width: 2175px){
 .diagnostik--img {
     bottom: 15px;
