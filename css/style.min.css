@@ -212,7 +212,7 @@ button::-moz-focus-inner {
 	align-self: center;
 }
 .phone span{
-	font-weight: bold;
+	font-weight: 600;
 	color: #fff;
 }
 .phone a{
@@ -359,7 +359,7 @@ box-shadow: 0px 0px 73px 52px rgba(231,241,248,1);
 .glasses-img{
 	position: absolute;
 	top: -24%;
-    right: 0;
+    right: -335px;
     z-index: -1;
 }
 
@@ -474,7 +474,7 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 .axessories-img{
 	position: absolute;
 	top: -108px;
-    left: -34px;
+    left: -488px;
     z-index: -1;
 }
 .axessories-title{
@@ -523,7 +523,7 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
 
 
 .diagnostik{
-	margin-top: 100px;
+	margin-top: 90px;
 	height: 700px;
 	position: relative;
 	background-color: #1878c3;
@@ -583,18 +583,21 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
 	font-size: 48px;
 	color: #fff;
 	font-weight: 600;
-	line-height: 70px;
+	line-height: 48px;
 	margin-bottom: 90px;
+}
+.diagnostik__descr{
+	width: 550px;
 }
 
 .diagnostik-descr{
 	font-size: 22px;
 	line-height: 32px;
 	color: #fff;
-	width: 460px;
+	width: 450px;
 }
 .diagnostik-descr span{
-	font-weight: bold;
+	font-weight: 600;
 }
 
 .diagnostik-container{
@@ -762,7 +765,7 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
 }
 .review-img{
 	position: absolute;
-	right: 0;
+	right: -450px;
     top: -187px;
     z-index: -1;
 }
@@ -772,6 +775,17 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
 .review__slider-item{
 	width: 980px;
 	margin: 0 auto;
+}
+.slider-item__photo{
+	width: 250px;
+    height: 280px;
+    border-radius: 50%;
+
+}
+.slider-item__photo img{
+	width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
 
 .slider-item__info{
@@ -783,7 +797,8 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
 	justify-content: space-between;
 	position: relative;
 	width: 980px;
-	margin: 38px 0;
+	margin: 48px auto 38px;
+
 }
 .slider-item__info-text{
 	align-self: center;
@@ -809,12 +824,12 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
 }
 
 .left--quotes{
-	top: -139px;
-    left: 182px;
+	    top: -147px;
+    left: 148px;
 }
 .right--quotes{
-	top: 27px;
-	right: -77px;
+	    top: 51px;
+    right: -37px;
 	transform: rotate(180deg);
 }
 
@@ -905,7 +920,7 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
    }
    .team__info-text span{
    	font-size: 20px;
-   	font-weight: bold;
+   	font-weight: 600;
    }
    .team__info-text p{
    	padding: 16px 10px 25px 10px;
@@ -935,7 +950,7 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
 .sertificates__slider-img{
 	width: 370px;
 	height: 490px;
-	margin-bottom: 40px;
+	margin: 0 auto 40px
 }
 .sertificates__slider-img img{
 	width: 370px;
@@ -949,7 +964,7 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
 .sertificates__slider-text{
 	font-size: 18px;
 	color: #4b4b4b;
-	font-weight: bold;
+	font-weight: 600;
 }
 
 .sertificates-arrows__left{
@@ -996,33 +1011,39 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
 }
 .adress-title{
 	margin-bottom: 10px;
-	font-size: 18px;
+	font-size: 16px;
 	color: #4b4b4b;
-	font-weight: bold;
+	font-weight: 600;
 }
 .adress-items{
 	margin-bottom: 35px;
 }
 .adress-link a{
-	font-size: 18px;
+	font-size: 16px;
 	text-decoration: underline;
 	color: #588ef7;
-	line-height: 20px;
+	line-height: 26px;
 }
 .contacts-req{
 	margin-bottom: 35px;
 }
-.contacts-req--link a{
-	font-size: 18px;
-	color: #4b4b4b;
-	font-weight: bold;
+.contacts-req--link a {
+    font-size: 16px;
+    color: #4b4b4b;
+    font-weight: 600;
+    line-height: 26px;
 }
 
 .callback-text span{
 	font-size: 20px;
-	font-weight: bold;
+	font-weight: 600;
 	color: #4b4b4b;
-	line-height: 25px;
+	line-height: 26px;
+}
+.callback-text{
+	font-size: 16px;
+    color: #4b4b4b;
+    line-height: 26px;
 }
 .contacts-btn{
 	margin-top: 40px;
@@ -1149,6 +1170,27 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 	.sertificates-img{
 		display: none;
 	}
+
+.glasses-slider__container {
+    display: block;
+}
+.slider-min {
+	margin: 0 auto;
+    width: 760px;
+}
+
+.slider-big {
+    margin: 0 auto;
+}
+.team__info{
+	flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.team__info-item {
+    margin-bottom: 30px;
+}
+
 }
 @media (max-width: 1366px){
 	.header-img--2{
@@ -1186,6 +1228,10 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 
 }
 
+
+
+
+
 @media (max-width: 1170px){
 	
 	.btn{
@@ -1198,17 +1244,11 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 .form-btn{
 	width: 270px;
 }
-.glasses-slider__container {
-    display: block;
-}
-.slider-min {
-	margin: 0 auto;
-    width: 760px;
-}
 
-.slider-big {
-    margin: 0 auto;
-}
+
+
+
+
 
 .review {
     margin-top: 30px;
@@ -1241,13 +1281,8 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
     margin-top: 30px;
     }
 
-.team__info{
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
-.team__info-item {
-    margin-bottom: 30px;
-}
+
+
 .sertificates__slider-img {
     margin-left: auto;
     margin-right: auto;
@@ -1701,6 +1736,10 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
     margin: 0 auto;
 }
 
+.diagnostik__descr {
+    width: 400px;
+}
+
 }
 
 
@@ -1819,6 +1858,10 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 .title-descr{
 	margin-top: 15px;
 	margin-bottom: 15px;
+}
+
+.diagnostik__descr {
+    width: 320px;
 }
 
 }

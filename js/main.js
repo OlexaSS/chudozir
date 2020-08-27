@@ -11,7 +11,7 @@ $('.slider-min').slick({
    asNavFor: '.slider-big',
    responsive: [
           {
-            breakpoint: 1171,
+            breakpoint: 1440,
             settings: {
               	vertical: false,
    				verticalSwiping: false
@@ -61,18 +61,15 @@ $('.sertificates__slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   dots: true,
-  centerMode: true,
-  centerPadding: 30,
   dotsClass: 'dots-style sertificates-dots',
   prevArrow: '<img class="slider-arrows sertificates-arrows__left" src="images/prev-arrow.png" alt="">',
   nextArrow: '<img class="slider-arrows sertificates-arrows__right" src="images/next-arrow.png" alt="">',
   responsive: [
           {
-            breakpoint: 1170,
+            breakpoint: 1200,
             settings: {
               	centerPadding: 0,
               	slidesToShow: 2,
-              	centerMode: true
             }
         },
            {
