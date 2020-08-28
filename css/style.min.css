@@ -145,9 +145,10 @@ button::-moz-focus-inner {
 	top: 0;
 	left: -340px;
 }
-.header-img--2{
-	bottom: -12%;
+.header-img--2 {
+    bottom: -12%;
     left: 35%;
+    opacity: 0.3;
 }
 .header-img--3{
 	bottom: 0;
