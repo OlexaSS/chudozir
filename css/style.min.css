@@ -1099,7 +1099,7 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 		display: none;
 	}
 }
-@media (max-width: 1440px){
+@media (max-width: 1450px){
 		.logo img{
 		width: 200px;
 	}
@@ -1129,6 +1129,9 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 	.axessories-img{
 		display: none;
 	}
+	.axessories-title {
+    margin-bottom: 35px;
+}
 	.sertificates-img{
 		display: none;
 	}
@@ -1143,7 +1146,21 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
     width: 270px;
     height: auto;
     }
-
+.team {
+    margin-top: 45px;
+    margin-bottom: 0;
+    min-height: 720px;
+    }
+    .title{
+		font-size: 30px;
+		line-height: 35px;
+	}
+	.subtitle{
+		font-size: 20px;
+	}
+	.team-title{
+		margin-bottom: 25px;
+	}
 
 .team__info{
 	flex-wrap: wrap;
@@ -1168,6 +1185,38 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 }
 .contacts {
     margin-top: 60px;
+}
+.glasses-slider__container {
+    margin-top: 30px;
+    }
+.slider-min {
+	margin: 0 auto;
+    width: 500px;
+}
+.slider-big {
+    margin: auto;
+    width: 500px;
+    height: auto;
+}
+.slider-big-item {
+    width: 500px;
+    height: auto;
+}
+.slider-big--img {
+    width: 500px;
+    height: auto;
+}
+.slider-min-item{
+	width: 320px;
+	height: auto;
+}
+.slider-min--img{
+	width: 320px;
+	height: auto;
+}
+    .team-title {
+    padding-top: 0;
+    margin-bottom: 45px;
 }
 
 
@@ -1207,35 +1256,9 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
     .verification-item {
     margin-bottom: 35px;
 }
-.glasses-slider__container {
-    margin-top: 30px;
-    }
 
-.slider-min {
-	margin: 0 auto;
-    width: 500px;
-}
-.slider-big {
-    margin: auto;
-    width: 500px;
-    height: auto;
-}
-.slider-big-item {
-    width: 500px;
-    height: auto;
-}
-.slider-big--img {
-    width: 500px;
-    height: auto;
-}
-.slider-min-item{
-	width: 320px;
-	height: auto;
-}
-.slider-min--img{
-	width: 320px;
-	height: auto;
-}
+
+
 
 
 
@@ -1285,14 +1308,7 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 }
     
     
-    .team-title {
-    padding-top: 0;
-    margin-bottom: 45px;
-}
-.team {
-    margin-top: 90px;
-    margin-bottom: 45px;
-    }
+
 
 
 .review {
@@ -1452,12 +1468,7 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 	.phone{
 		margin-right: 15px;
 	}
-	.title{
-		font-size: 30px;
-	}
-	.subtitle{
-		font-size: 20px;
-	}
+	
 	.glasses__item-title {
     font-size: 18px;
         padding: 0 15px;
