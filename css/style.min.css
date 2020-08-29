@@ -197,6 +197,7 @@ button::-moz-focus-inner {
     margin-left: 7px;
 }
 .logo-title{
+	font-family: Roboto, sans-serif;
 	font-size: 18px;
 	text-transform: uppercase;
 	color: #0081c7;
@@ -211,7 +212,7 @@ button::-moz-focus-inner {
 }
 .logo-descr{
 	margin-left: 16px;
-	align-self: center;
+	padding-top: 15px;
 }
 .header-contacts{
 	display: -webkit-flex;
