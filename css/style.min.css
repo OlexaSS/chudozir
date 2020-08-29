@@ -1100,6 +1100,20 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 	}
 }
 @media (max-width: 1440px){
+		.logo img{
+		width: 200px;
+	}
+	.verification-list {
+    margin-top: 25px;
+}
+	.header__content {
+    margin-top: 20px;
+}
+
+	.content-title{
+		font-size: 30px;
+    line-height: 35px;
+	}
 	.header-img--1{
 		display: none;
 	}
@@ -1187,16 +1201,7 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 }
 
 @media (max-width: 1250px){
-	.header__content {
-    margin-top: 45px;
-}
-.title{
-    	font-size: 30px;
-    	line-height: 40px;
-    }
-    .subtitle{
-    	font-size: 20px;
-    }
+
 
 
     .verification-item {
@@ -1238,10 +1243,7 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 
 
 @media (max-width: 1170px){
-	.content-title{
-		font-size: 30px;
-    line-height: 35px;
-	}
+	
 	.btn{
 		width: 270px;
 	}
@@ -1742,15 +1744,7 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
     .form-title {
     padding: 30px 6px;
 	}
-/*.team__info-photo {
-    width: 320px;
-    height: 320px;
-    margin: 0 auto;
-	}
-.team__info-photo img {
-    width: 320px;
-    height: 320px;
-	}*/
+
 .sertificates__slider {
     width: 320px;
 	}
@@ -1793,11 +1787,7 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
     margin-left: 0;
 	}
 }
-@media(max-width: 440px){
-	.logo img{
-		width: 200px;
-	}
-}
+
 @media(max-width: 415px){
 
 	.header-btn {
