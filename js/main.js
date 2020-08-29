@@ -83,82 +83,46 @@ $('.sertificates__slider').slick({
     ]
 });
 
-$('.popupBtn').magnificPopup({
-     items: {
-        type: 'inline',
-        src: $('<form class="white-popup popup-form" action="#">\
-            <div class="popup-slider">\
-                <div class="popup__item">\
-                    <button class="btn-all popup-btn--callback" id="callback1">Давайте мы перезвоним</button>\
-                    <button class="btn-all popup-btn btn--diagnostic" id="callback2">Записаться на диагностику зрения</button>\
-                    <button class="btn-all popup-btn" id="callback3">Записаться на диагностику</button>\
-                </div>\
-                <div class="popup__item">\
-                    <button class="btn-all popup-btn--callback" id="callback1">Давайте мы перезвоним</button>\
-                    <button class="btn-all popup-btn btn--diagnostic" id="callback2">Записаться на диагностику зрения</button>\
-                    <button class="btn-all popup-btn" id="callback3">Записаться на диагностику</button>\
-                </div>\
-                <div class="popup__item">\
-                    <button class="btn-all popup-btn--callback" id="callback1">Давайте мы перезвоним</button>\
-                    <button class="btn-all popup-btn btn--diagnostic" id="callback2">Записаться на диагностику зрения</button>\
-                    <button class="btn-all popup-btn" id="callback3">Записаться на диагностику</button>\
-                </div>\
-                <div class="popup__item">\
-                    <button class="btn-all popup-btn--callback" id="callback1">Давайте мы перезвоним</button>\
-                    <button class="btn-all popup-btn btn--diagnostic" id="callback2">Записаться на диагностику зрения</button>\
-                    <button class="btn-all popup-btn" id="callback12">Записаться на диагностику</button>\
-                </div>\
-                <div class="popup__item">\
-                    <button class="btn-all popup-btn--callback" id="callback13">Давайте мы перезвоним</button>\
-                    <button class="btn-all popup-btn btn--diagnostic" id="callback3">Записаться на диагностику зрения</button>\
-                    <button class="btn-all popup-btn" id="callback15">Записаться на диагностику</button>\
-                </div>\
-            </div>\
-        </form>')
-    },
-    midClick: true,
-  	type: 'inline',
-  	callbacks: {
-    open() {
-      const $slider = $('.popup-slider');
-      if (!$slider.hasClass('slick-initialized')) {
-        $slider.slick({
-          infinite: true,
-					  speed: 300,
-					  slidesToShow: 1,
-					   slidesToScroll: 1,
-					   dots: true,
-					   arrows: true,
-					   dotsClass: 'popup__dots',
-					  prevArrow: '<img class="popup-arrows popup-arrows__left" src="images/prev-arrow.png" alt="">',
-					  nextArrow: '<img class="popup-arrows popup-arrows__right" src="images/next-arrow.png" alt="">'
-        });
-      }
-      $slider.slick('slickGoTo', +$(this).attr('index'));
-    },
-  },
 
+// открыть по клику на кнопку
+$('.js-button-action').click(function(){
+  $('.wrapper').css('filter', 'blur(5px)');
+  $('.js-overlay-action').fadeIn();
+  $('.popup-slider').slick('setPosition');
+  $('body').toggleClass('lock');
+});
+//закрыть окно на крестик
+$('.js-close-popup').click(function(){
+  $('.js-overlay-action').fadeOut();
+  $('.wrapper').css('filter', 'none');
+  $('body').toggleClass('lock');
 });
 
-$('body').on('click','#callback1', function(){
-    alert('Нажали кнопку 1');    
-})
+//закрыть по всему клику вне окна
+$(document).mouseup(function(e){
+  let popup = $('.js-popup-action');
+  if (e.target != popup[0] && popup.has(e.target).length === 0){
+    $('.js-overlay-action').fadeOut();
+    $('.wrapper').css('filter', 'none');
+    $('body').toggleClass('lock');
+  }
+});
 
-$('body').on('click','#callback2', function(){
-    alert('Нажали кнопку 2');    
-})
-$('body').on('click','#callback3', function(){
-    alert('Нажали кнопку 3');    
-})
+$('.popup-slider').slick({
+          infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+             slidesToScroll: 1,
+             dots: true,
+             arrows: true,
+             dotsClass: 'popup__dots',
+            prevArrow: '<img class="popup-arrows popup-arrows__left" src="images/prev-arrow.png" alt="">',
+            nextArrow: '<img class="popup-arrows popup-arrows__right" src="images/next-arrow.png" alt="">'
+        });
 
 $('.menu-btn').on('click', function(){
       $('.header-contacts').toggleClass('active');
     });
 
-   window.addEventListener('resize', function(){
-      let w = $(window).width();
-    console.log (w);
-      
-  });
 
 });
