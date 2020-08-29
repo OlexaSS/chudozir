@@ -1222,6 +1222,9 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
     padding-top: 0;
     margin-bottom: 45px;
 }
+.dots-style {
+    margin-top: 40px;
+    }
 
 
 
@@ -1338,9 +1341,6 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
         left: 400px;
     bottom: 30px;
 }
-.dots-style {
-    margin-top: 40px;
-    }
 
 .sertificates-arrows__left {
     left: 200px;
