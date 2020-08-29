@@ -389,8 +389,8 @@ box-shadow: 0px 0px 73px 52px rgba(231,241,248,1);
 	font-size: 14px;
 	color: #b4b4b4;
 	font-style: italic;
-	margin-bottom: 25px;
-    margin-top: 30px;
+	margin-bottom: 20px;
+    margin-top: 25px;
 }
 .glasses__item{
 	width: 370px;
@@ -401,7 +401,7 @@ box-shadow: 0px 0px 73px 52px rgba(231,241,248,1);
 	width: 370px;
 	height: 370px;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .glasses__item-img img{
 	width: 370px;
@@ -1238,6 +1238,10 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 
 
 @media (max-width: 1170px){
+	.content-title{
+		font-size: 30px;
+    line-height: 35px;
+	}
 	.btn{
 		width: 270px;
 	}
@@ -1616,11 +1620,15 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 	margin: 0 auto;
 	}
 	}
-@media(max-width: 620px){
-
-.logo-descr {
+	@media(max-width: 700px){
+	.logo-descr {
     display: none;
 }
+	}
+
+@media(max-width: 620px){
+
+
 .header-contacts.active {
     transform: translateX(-25%);
 }
