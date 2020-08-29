@@ -10,13 +10,13 @@ $('.slider-min').slick({
    arrows: false,
    asNavFor: '.slider-big',
    responsive: [
-          {
-            breakpoint: 1440,
-            settings: {
-              	vertical: false,
-   				verticalSwiping: false
-            }
-          }
+       //    {
+       //      breakpoint: 1171,
+       //      settings: {
+       //        	vertical: false,
+   				// verticalSwiping: false
+       //      }
+       //    }
     ]
 });
 
@@ -66,7 +66,7 @@ $('.sertificates__slider').slick({
   nextArrow: '<img class="slider-arrows sertificates-arrows__right" src="images/next-arrow.png" alt="">',
   responsive: [
           {
-            breakpoint: 1200,
+            breakpoint: 1170,
             settings: {
               	centerPadding: 0,
               	slidesToShow: 2,
@@ -154,5 +154,11 @@ $('body').on('click','#callback3', function(){
 $('.menu-btn').on('click', function(){
       $('.header-contacts').toggleClass('active');
     });
+
+   window.addEventListener('resize', function(){
+      let w = $(window).width();
+    console.log (w);
+      
+  });
 
 });
