@@ -82,32 +82,6 @@ $('.sertificates__slider').slick({
         }
     ]
 });
-
-
-// открыть по клику на кнопку
-$('.js-button-action').click(function(){
-  $('.wrapper').css('filter', 'blur(5px)');
-  $('.js-overlay-action').fadeIn();
-  $('.popup-slider').slick('setPosition');
-  $('body').toggleClass('lock');
-});
-//закрыть окно на крестик
-$('.js-close-popup').click(function(){
-  $('.js-overlay-action').fadeOut();
-  $('.wrapper').css('filter', 'none');
-  $('body').toggleClass('lock');
-});
-
-//закрыть по всему клику вне окна
-$(document).mouseup(function(e){
-  let popup = $('.js-popup-action');
-  if (e.target != popup[0] && popup.has(e.target).length === 0){
-    $('.js-overlay-action').fadeOut();
-    $('.wrapper').css('filter', 'none');
-    $('body').toggleClass('lock');
-  }
-});
-
 $('.popup-slider').slick({
           infinite: true,
             speed: 300,
@@ -119,6 +93,54 @@ $('.popup-slider').slick({
             prevArrow: '<img class="popup-arrows popup-arrows__left" src="images/prev-arrow.png" alt="">',
             nextArrow: '<img class="popup-arrows popup-arrows__right" src="images/next-arrow.png" alt="">'
         });
+
+//закрыть по всему клику вне окна
+let closePopupOnWindow = () => {
+  $(document).mouseup(function(e){
+    let popup = $('.js-popup-action');
+    if (e.target != popup[0] && popup.has(e.target).length === 0){
+      $('.js-overlay-action').fadeOut();
+      $('.wrapper').css('filter', 'none');
+      $('body').removeClass('lock');
+    }
+  });
+}
+ //закрыть окно на крестик
+let closePopupOnBtn = () => {
+  $('.js-close-popup').click(function(){
+    $('.js-overlay-action').fadeOut();
+    $('.wrapper').css('filter', 'none');
+    $('body').removeClass('lock');
+  });
+}
+
+let callback = $('.js-callback');
+let getCoastBtn = $('.js-getCoastBtn');
+let getAxessoriesBtn = $('.js-getAxessories');
+let getSpectaclesBtn = $('.js-getSpectacles');
+let getAppointmentBtn = $('.js-appointment');
+let getQuestionBtn = $('.js-question');
+
+
+let openPopup = (element) =>{
+  element.click(function(event){
+    event.preventDefault();
+  $('.wrapper').css('filter', 'blur(5px)');
+  $('body').addClass('lock');
+  $('.js-overlay-action').fadeIn();
+  $('.popup-slider').slick('setPosition');
+  closePopupOnBtn();  
+  closePopupOnWindow();
+  });
+}
+
+openPopup(callback);
+openPopup(getCoastBtn);
+openPopup(getAxessoriesBtn);
+openPopup(getSpectaclesBtn);
+openPopup(getAppointmentBtn);
+openPopup(getQuestionBtn);
+
 
 $('.menu-btn').on('click', function(){
       $('.header-contacts').toggleClass('active');
