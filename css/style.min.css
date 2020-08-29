@@ -176,6 +176,39 @@ button::-moz-focus-inner {
 	display: -o-flex;
 	display: flex;
 }
+.logo{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+.logo-link{
+	width: 63px;
+	height: 63px;
+}
+.logo-link img{
+	width: 63px;
+	height: 63px;
+}
+.logo-text{
+	margin-top: 15px;
+    margin-left: 7px;
+}
+.logo-title{
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #0081c7;
+	font-weight: 600;
+}
+.logo-subtitle{
+	font-size: 8px;
+    color: #4b4b4b;
+    font-weight: 600;
+    line-height: 12px;
+    margin-top: 7px;
+}
 .logo-descr{
 	margin-left: 16px;
 	align-self: center;
@@ -1100,9 +1133,9 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 	}
 }
 @media (max-width: 1600px){
-		.logo img{
+/*		.logo img{
 		width: 200px;
-	}
+	}*/
 	.verification-list {
     margin-top: 25px;
 }
