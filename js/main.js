@@ -67,17 +67,7 @@ $('.sertificates__slider').slick({
         }
     ]
 });
-$('.popup-slider').slick({
-          infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-             slidesToScroll: 1,
-             dots: true,
-             arrows: true,
-             dotsClass: 'popup__dots',
-            prevArrow: '<img class="popup-arrows popup-arrows__left" src="images/prev-arrow.png" alt="">',
-            nextArrow: '<img class="popup-arrows popup-arrows__right" src="images/next-arrow.png" alt="">'
-        });
+
 
 //закрыть по всему клику вне окна
 let closePopupOnWindow = () => {
@@ -113,7 +103,6 @@ let openPopup = (element) =>{
   $('.wrapper').css('filter', 'blur(5px)');
   $('body').addClass('lock');
   $('.js-overlay-action').fadeIn();
-  $('.popup-slider').slick('setPosition');
   closePopupOnBtn();  
   closePopupOnWindow();
   });

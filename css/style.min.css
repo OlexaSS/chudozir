@@ -52,7 +52,7 @@ button::-moz-focus-inner {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.close-popup{
+/*.close-popup{
 	width: 40px;
 	height: 40px;
 	cursor: pointer;
@@ -81,111 +81,19 @@ button::-moz-focus-inner {
 	top: 11px;
 	left: -4px;
 	transform: rotate(45deg);
-}
+}*/
+
+
+
 .popup-form{
   width: 100%;
   position: relative;
   display: block;
 }
-.popup-slider{
-  width: 440px;
-  height: 100%;
-}
-.popup__item{
-  width: 440px;
-  height: 370px;
-}
 
 
-.btn-all{
-  border-radius: 25px;
-  font-weight: bold;
-  height: 50px;
-  cursor: pointer;
-  margin-left: 35px;
-  transition: all ease .3s;
-}
-.btn-all:hover{
-  transform: scale(1.1);
-}
 
-.popup-btn--callback{
-  margin-top: 35px;
-  width: 270px;
-  font-size: 14px;
-  color: #99c9ee;
-  background-color: #fff;
-  border: 1px solid #99c9ee;
-  
-}
-.popup-btn{
-  width: 270px;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #0a68b0;
-  border: none;
-  margin-top: 25px;
-}
-.btn--diagnostic{
-  width: 370px;
-}
 
-.popup__dots{
-  position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-        display: flex;
-        justify-content: center;
-        margin-top: -95px;
-    }
-
-.popup__dots button {
-    border: none;
-    background: #cecece;
-    border-radius: 50%;
-    font-size: 0;
-    height: 7px;
-    width: 7px;
-    margin-left: 15px;
-    padding: 0;
-}
-.slick-active{
-        position: relative;
-    }
-    .popup__dots .slick-active::after{
-        background-image: url(../images/dot-active.png);
-        background-repeat: no-repeat;
-
-        background-position: center;
-        content: "";
-        width: 13px;
-        height: 13px;
-        position: absolute;
-        top: 7px;
-        left: 12px;
-
-    }
-    .popup-arrows{
-    width: 55px;
-    height: 55px;
-  position: absolute;
-  cursor: pointer;
-  opacity: 0.6;
-  transition: all ease .3s;
-  z-index: 9;
-}
-.popup-arrows:hover{
-  opacity: 1;
-}
-    .popup-arrows__left{
-    left: 35px;
-      bottom: 55px;
-    }
-    .popup-arrows__right{
-    right: 35px;
-      bottom: 55px;
-    }
 
 /*END POPUP FORM*/
 .header-img--mob{
@@ -926,7 +834,7 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
 	position: relative;
 	width: 980px;
 	margin: 48px auto 38px;
-	min-height: 400px;
+	min-height: 450px;
 }
 .slider-item__info-text{
 	position: absolute;
@@ -1978,19 +1886,8 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 .popup{
 	width: 320px;
 }
-.close-popup {
-    right: -15px;
-    top: 0px;
-    }
-.popup-slider {
-    width: 100%;
-}
-.btn--diagnostic {
-    width: 270px;
-}
-.btn-all {
-    margin-left: 25px;
-}
+
+
 }
 
 
