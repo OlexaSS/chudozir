@@ -926,7 +926,7 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
 	position: relative;
 	width: 980px;
 	margin: 48px auto 38px;
-	min-height: 500px;
+	min-height: 400px;
 }
 .slider-item__info-text{
 	position: absolute;
@@ -957,7 +957,7 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
     left: 148px;
 }
 .right--quotes{
-	    top: 51px;
+	    top: 195px;
     right: -37px;
 	transform: rotate(180deg);
 }
