@@ -74,11 +74,7 @@ $('.menu-btn').on('click', function(){
       $('.header-contacts').toggleClass('active');
     });
 
-window.addEventListener('resize', function(){
-      let w = $(window).width();
-    console.log (w);
-      
-  });
+
 
 
 });
