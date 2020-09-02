@@ -843,41 +843,21 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
 	margin-top: 90px;
 	text-align: center;
 }
+
 .glasses-slider__container{
-	margin-top: 70px;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	margin-top: 30px;
 }
-.slider-min{
-	width: 370px;
+.glasses-slider__item{
+	width: 600px;
 }
-.slider-min-item{
-	width: 370px;
-	height: 200px;
-	margin-top: 5px;
-}
-.slider-min--img{
-	width: 370px;
-	height: 200px;
+.glasses-slider-img{
+	width: 600px;
+	height: auto;
 	object-fit: cover;
+	margin: 0 auto;
 }
-.slider-big{
-	width: 765px;
-}
-.slider-big-item{
-	width: 765px;
-	height: 415px;
-}
-.slider-big--img{
-	width: 765px;
-	height: 415px;
-	object-fit: cover;
-}
+
+
 .slider-arrows{
 	position: absolute;
 	cursor: pointer;
@@ -1291,9 +1271,7 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 	}
 }
 @media (max-width: 1600px){
-/*		.logo img{
-		width: 200px;
-	}*/
+
 	.verification-list {
     margin-top: 25px;
 }
@@ -1381,34 +1359,7 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 .contacts {
     margin-top: 90px;
 }
-.glasses-slider__container {
-    margin-top: 30px;
-    }
-.slider-min {
-	margin: 0 auto;
-    width: 500px;
-}
-.slider-big {
-    margin: auto;
-    width: 500px;
-    height: auto;
-}
-.slider-big-item {
-    width: 500px;
-    height: auto;
-}
-.slider-big--img {
-    width: 500px;
-    height: auto;
-}
-.slider-min-item{
-	width: 320px;
-	height: auto;
-}
-.slider-min--img{
-	width: 320px;
-	height: auto;
-}
+
     .team-title {
     padding-top: 0;
     margin-bottom: 45px;
@@ -1449,16 +1400,9 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 
 @media (max-width: 1250px){
 
-
-
     .verification-item {
     margin-bottom: 35px;
 }
-
-
-
-
-
 
 }
 
@@ -1476,33 +1420,23 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 	width: 270px;
 }
 
-.slider-min {
-	display: none;
-}
 
-.glasses-slider__container {
-    margin-top: 30px;
-}
-.slider-glasses-btn{
-	margin-top: 80px;
-}
 .slider-arrows__left {
-    right: 400px;
-    bottom: -62px;
+    right: 245px;
+    bottom: -105px;
 }
 .slider-arrows__right {
-    right: 40px;
-    bottom: -62px;
+    right: 150px;
+    bottom: -105px;
 }
-.slider-big--img {
-    width: 500px;
-    height: auto;
+
+
+.glasses-slider-img{
+	width: 500px;
 }
-.slider-big {
-    width: 500px;
-}
-.slider-big-item{
-	height: auto;
+
+.glasses-slider__item{
+	width: 500px;
 }
     
 .review {
@@ -1685,6 +1619,23 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
     margin-top: 30px;
     height: auto;
 }
+
+.glasses-slider-img{
+	width: 350px;
+}
+
+.glasses-slider__item{
+	width: 350px;
+}
+.slider-arrows__left {
+    right: 210px;
+}
+.slider-arrows__right {
+    right: 110px;
+    }
+
+
+
 .form{
 	margin-left: 40px;
 }
@@ -1708,6 +1659,13 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
     width: 315px;
     height: 315px;
 }
+.slider-arrows__left {
+    right: 170px;
+}
+.slider-arrows__right {
+    right: 70px;
+}
+
 .map-img {
     text-align: center;
     width: 480px;
@@ -1791,12 +1749,35 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
     width: 66%;
     left: 46%;
     }
-    .slider-min{
-    	display: none;
-    }
     .glasses-sliders {
     margin-top: 30px;
 }
+
+.glasses-slider-img{
+	width: 320px;
+}
+
+.glasses-slider__item{
+	width: 320px;
+}
+
+.slider-arrows__left {
+    right: 50%;
+    transform: translateX(-50%);
+    bottom: -65px;
+	}
+
+.slider-arrows__right {
+    right: 50%;
+    transform: translateX(150%);
+    bottom: -65px;
+	}
+
+	.slider-glasses-btn {
+    margin-top: 85px;
+}
+
+
 
 .team-title {
     padding-top: 60px;
@@ -1827,6 +1808,17 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
     display: none;
 }
 	}
+
+@media(max-width: 640px){
+	.glasses-slider-img{
+	width: 400px;
+}
+
+.glasses-slider__item{
+	width: 400px;
+}
+
+}
 
 @media(max-width: 620px){
 
@@ -1865,29 +1857,16 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 .header-contacts.active {
     transform: translateX(-40%);
 }
-.btn{
-	width: 340px;
-}
+
 .btn{
 	width: 270px;
 }
-.slider-big {
-    width: 320px;
-}
-.slider-big--img {
-    width: 320px;
-    }
-    .slider-big-item {
-    height: auto;
-	}
-.slider-arrows__left {
-    right: 50%;
-    transform: translateX(-50%);
-	}
-.slider-arrows__right {
-    right: 50%;
-    transform: translateX(150%);
-	}
+
+
+
+
+    
+
 .review__slider-item {
     width: 320px;
     }
@@ -2036,6 +2015,14 @@ box-shadow: 0px 0px 70px 75px rgba(233,241,249,1);
 .diagnostik__descr {
     width: 320px;
 	}
+
+	.glasses-slider-img{
+	width: 320px;
+}
+
+	.glasses-slider__item{
+	width: 320px;
+}
 
 }
 

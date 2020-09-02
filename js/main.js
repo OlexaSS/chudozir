@@ -1,35 +1,20 @@
 $(function(){
 
-$('.slider-min').slick({
+$('.glasses-slider').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 2,
-   vertical: true,
-   verticalSwiping: true,
-   slidesToScroll: 1,
-   arrows: false,
-   asNavFor: '.slider-big',
-   responsive: [
-       //    {
-       //      breakpoint: 1171,
-       //      settings: {
-       //        	vertical: false,
-   				// verticalSwiping: false
-       //      }
-       //    }
-    ]
-});
-
-$('.slider-big').slick({
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  slidesToScroll: 1, 
-  centerMode: true,
-  fade: true,
+  slidesToScroll: 1,
   prevArrow: '<img class="slider-arrows slider-arrows__left" src="images/prev-arrow.png" alt="">',
   nextArrow: '<img class="slider-arrows slider-arrows__right" src="images/next-arrow.png" alt="">',
-  asNavFor: '.slider-min'
+  responsive: [
+          {
+            breakpoint: 641,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+    ]
 });
 
 $('.review__slider').slick({
@@ -145,6 +130,12 @@ openPopup(getQuestionBtn);
 $('.menu-btn').on('click', function(){
       $('.header-contacts').toggleClass('active');
     });
+
+window.addEventListener('resize', function(){
+      let w = $(window).width();
+    console.log (w);
+      
+  });
 
 
 });
