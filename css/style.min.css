@@ -906,13 +906,15 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
 }
 .slider-item__photo{
 	width: 250px;
-    height: 280px;
+    height: 250px;
     border-radius: 50%;
 }
 .slider-item__photo img{
 	width: 250px;
     height: 250px;
     object-fit: cover;
+    border-radius: 50%;
+
 }
 .slider-item__info{
 	display: -webkit-flex;
@@ -924,8 +926,12 @@ box-shadow: 10px 10px 0px 0px rgba(232,241,249,1);
 	position: relative;
 	width: 980px;
 	margin: 48px auto 38px;
+	min-height: 500px;
 }
 .slider-item__info-text{
+	position: absolute;
+    left: 240px;
+    top: 0;
 	align-self: center;
 	font-size: 16px;
 	color:  #4b4b4b;
