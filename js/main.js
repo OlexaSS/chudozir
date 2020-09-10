@@ -1,5 +1,8 @@
 $(function(){
 
+// glasses-slider============
+
+
 $('.glasses-slider').slick({
   infinite: true,
   speed: 300,
@@ -16,6 +19,8 @@ $('.glasses-slider').slick({
           }
     ]
 });
+
+// review__slider===================
 
 $('.review__slider').slick({
   infinite: true,
@@ -40,6 +45,7 @@ $('.review__slider').slick({
     ]
 });
 
+// team__info-slider==================
 
 $(window).on('load', function(){
   if(window.innerWidth < 980){
@@ -67,6 +73,7 @@ $(window).on('load', function(){
   }
 });
 
+// sertificates__slider=====================
 
 $('.sertificates__slider').slick({
   infinite: true,
@@ -95,6 +102,57 @@ $('.sertificates__slider').slick({
         }
     ]
 });
+
+// map links========================================
+
+let mapImg = $('.map-img');
+
+
+$('.js-link-1').on('click', function(e){
+  e.preventDefault();
+  mapImg.html('<img class="map-img--mod" src="images/maps/dnepr/1.png" alt="map">')
+});
+
+$('.js-link-2').on('click', function(e){
+  e.preventDefault();
+  mapImg.html('<img class="map-img--mod" src="images/maps/dnepr/2.png" alt="map">')
+});
+
+$('.js-link-3').on('click', function(e){
+  e.preventDefault();
+  mapImg.html('<img class="map-img--mod" src="images/maps/dnepr/3.png" alt="map">')
+});
+
+$('.js-link-4').on('click', function(e){
+  e.preventDefault();
+  mapImg.html('<img class="map-img--mod" src="images/maps/dnepr/4.png" alt="map">')
+});
+
+$('.js-link-5').on('click', function(e){
+  e.preventDefault();
+  mapImg.html('<img class="map-img--mod" src="images/maps/dnepr/5.png" alt="map">')
+});
+
+$('.js-link-6').on('click', function(e){
+  e.preventDefault();
+  mapImg.html('<img class="map-img--mod" src="images/maps/dnepr/6.png" alt="map">')
+});
+
+$('.js-link-7').on('click', function(e){
+  e.preventDefault();
+  mapImg.html('<img class="map-img--mod" src="images/maps/krivoy-rog/1.png" alt="map">')
+});
+
+$('.js-link-8').on('click', function(e){
+  e.preventDefault();
+  mapImg.html('<img class="map-img--mod" src="images/maps/krivoy-rog/2.png" alt="map">')
+});
+
+$('.js-link-9').on('click', function(e){
+  e.preventDefault();
+  mapImg.html('<img class="map-img--mod" src="images/maps/kamenskoe/1.png" alt="map">')
+});
+
 
 // $('.menu-btn').on('click', function(){
 //       $('.header-contacts').toggleClass('active');
