@@ -7,7 +7,7 @@ $c = true;
 if ( $method === 'POST' ) {
 
 	$project_name = "1";
-	$admin_email  = "chudozirl@gmail.com";
+	$admin_email  = "ssolexa@gmail.com";
 	$form_subject = "Заявка с лендинга";
 
 	foreach ( $_POST as $key => $value ) {
